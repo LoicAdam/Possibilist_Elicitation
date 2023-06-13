@@ -1,0 +1,93 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.267004,0.004874,0.329415}
+\definecolor{color1}{rgb}{0.127568,0.566949,0.550556}
+\definecolor{color2}{rgb}{0.993248,0.906157,0.143936}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of questions},
+xmin=-0.75, xmax=15.75,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Percentage bad models detected},
+ymin=-0.0484937415082749, ymax=1.01836857167377,
+ytick style={color=black},
+ytick={0,0.2,0.4,0.6,0.8,1},
+yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [semithick, color0, mark=x, mark size=3, mark options={solid}]
+table {%
+0 0
+1 0
+2 0.07
+3 0.20965
+4 0.367500000000001
+5 0.503195000000001
+6 0.6662985
+7 0.768201349999999
+8 0.820730399999999
+9 0.875683654999999
+10 0.911967521499999
+11 0.9356748695
+12 0.95066958245
+13 0.958765885384999
+14 0.964918197739998
+15 0.969874830165498
+};
+\addlegendentry{random}
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0
+1 0
+2 0.0035
+3 0.014
+4 0.0455
+5 0.07455
+6 0.1176
+7 0.1533
+8 0.184415
+9 0.203245
+10 0.23009
+11 0.252154
+12 0.276353
+13 0.2890615
+14 0.30497075
+15 0.3250576
+};
+\addlegendentry{fairness-oriented OWA}
+\addplot [semithick, color2, mark=triangle*, mark size=3, mark options={solid,rotate=180}]
+table {%
+0 0
+1 0
+2 0
+3 0
+4 0.007
+5 0.0105
+6 0.014
+7 0.0175
+8 0.02205
+9 0.0336
+10 0.03815
+11 0.03815
+12 0.046515
+13 0.053515
+14 0.0536095
+15 0.0651595
+};
+\addlegendentry{random OWA}
+\end{axis}
+
+\end{tikzpicture}

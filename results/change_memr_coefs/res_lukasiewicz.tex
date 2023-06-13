@@ -1,0 +1,107 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkcyan32144140}{RGB}{32,144,140}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkslateblue48103141}{RGB}{48,103,141}
+\definecolor{darkslateblue6857130}{RGB}{68,57,130}
+\definecolor{gold25323136}{RGB}{253,231,36}
+\definecolor{indigo68184}{RGB}{68,1,84}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{mediumseagreen53183120}{RGB}{53,183,120}
+\definecolor{yellowgreen14421467}{RGB}{144,214,67}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.03)},
+  anchor=south west,
+  draw=lightgray204
+},
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={Number of questions},
+xmin=-0.25, xmax=5.25,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={mEMR/Initial mEMR},
+ymin=0, ymax=1.0446286082867,
+ytick style={color=black}
+]
+\addplot [semithick, indigo68184, mark=x, mark size=3, mark options={solid}]
+table {%
+0 1
+1 1
+2 1
+3 1
+4 1
+5 1
+};
+\addlegendentry{0}
+\addplot [semithick, darkslateblue6857130, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1
+1 0.972077173250759
+2 0.914271393812109
+3 0.827600083020477
+4 0.722198145149055
+5 0.620543595249705
+};
+\addlegendentry{0.3}
+\addplot [semithick, darkslateblue48103141, mark=triangle*, mark size=3, mark options={solid,rotate=180}]
+table {%
+0 1
+1 0.938534766321214
+2 0.78667841956891
+3 0.630527369753597
+4 0.491313609530468
+5 0.367459515069499
+};
+\addlegendentry{0.5}
+\addplot [semithick, darkcyan32144140, mark=square*, mark size=3, mark options={solid}]
+table {%
+0 1
+1 0.884407167252813
+2 0.706318468835528
+3 0.541207286276254
+4 0.399272965033828
+5 0.282854168948148
+};
+\addlegendentry{0.7}
+\addplot [semithick, mediumseagreen53183120, mark=pentagon*, mark size=3, mark options={solid}]
+table {%
+0 1
+1 0.843752466125422
+2 0.652068765572607
+3 0.487896920118247
+4 0.351595403947235
+5 0.23215507553408
+};
+\addlegendentry{0.8}
+\addplot [semithick, yellowgreen14421467, mark=asterisk, mark size=3, mark options={solid}]
+table {%
+0 1
+1 0.791655197894851
+2 0.59657906687792
+3 0.432412532647622
+4 0.294779071444256
+5 0.178517647634318
+};
+\addlegendentry{0.9}
+\addplot [semithick, gold25323136, mark=diamond*, mark size=3, mark options={solid}]
+table {%
+0 1
+1 0.731433300453997
+2 0.54143516379182
+3 0.361578691605714
+4 0.210362465761066
+5 0.107427834265955
+};
+\addlegendentry{1}
+\end{axis}
+
+\end{tikzpicture}

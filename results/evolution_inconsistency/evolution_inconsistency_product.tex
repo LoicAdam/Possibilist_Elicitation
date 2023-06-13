@@ -1,0 +1,114 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.267004,0.004874,0.329415}
+\definecolor{color1}{rgb}{0.190631,0.407061,0.556089}
+\definecolor{color2}{rgb}{0.20803,0.718701,0.472873}
+\definecolor{color3}{rgb}{0.993248,0.906157,0.143936}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Number of questions},
+xmin=-0.75, xmax=15.75,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Inconsistency},
+ymin=-0.0387920925, ymax=1,
+ytick style={color=black},
+ytick={0,0.2,0.4,0.6,0.8,1},
+yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
+]
+\addplot [semithick, color0, mark=x, mark size=3, mark options={solid}]
+table {%
+0 0
+1 0
+2 0
+3 0.0175
+4 0.055
+5 0.08375
+6 0.12625
+7 0.17375
+8 0.22625
+9 0.275
+10 0.31125
+11 0.365
+12 0.41625
+13 0.455625
+14 0.50921875
+15 0.54140625
+};
+\addlegendentry{0.5}
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0
+1 0
+2 0.0035
+3 0.014
+4 0.049
+5 0.12005
+6 0.18165
+7 0.2464
+8 0.31675
+9 0.418915000000001
+10 0.47551
+11 0.532189
+12 0.58917635
+13 0.6229797
+14 0.66020255
+15 0.6902049
+};
+\addlegendentry{0.7}
+\addplot [semithick, color2, mark=triangle*, mark size=3, mark options={solid,rotate=180}]
+table {%
+0 0
+1 0
+2 0
+3 0.0225
+4 0.0855
+5 0.15795
+6 0.26685
+7 0.38655
+8 0.49374
+9 0.544185
+10 0.602775000000001
+11 0.648630000000001
+12 0.695160000000001
+13 0.728068500000001
+14 0.7553079
+15 0.77584185
+};
+\addlegendentry{0.9}
+\addplot [semithick, color3, mark=square*, mark size=3, mark options={solid}]
+table {%
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+};
+\addlegendentry{1}
+\end{axis}
+
+\end{tikzpicture}
